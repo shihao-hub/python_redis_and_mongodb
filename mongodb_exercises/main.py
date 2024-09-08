@@ -17,6 +17,7 @@ class User(Document):
     #   希望能够尽快牛起来！加油！
     username = StringField(required=True)
     email = StringField(required=True)
+    products = ListField(required=True)
 
 
 conn = pymongo.MongoClient(host="localhost", port=27017)
@@ -41,7 +42,7 @@ def test_mail_app_db():
 def test():
     mongoengine.connect("mail_app")
     # 创建新用户
-    user = User(username='john_doe', email='john@example.com')
+    user = User(username='john_doe', email='john@example.com', products=[1, 2, 3])
     user.save()
 
     # 查询用户
