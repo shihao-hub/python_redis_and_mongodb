@@ -1,0 +1,114 @@
+{
+  "store": {
+    "name": "Wonderland Bookstore",
+    "location": {
+      "address": {
+        "street": "123 Fantasy Rd",
+        "city": "Wonderland",
+        "state": "Fiction",
+        "zip": "12345"
+      },
+      "coordinates": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      }
+    },
+    "products": [
+      {
+        "id": "001",
+        "title": "The Great Adventure",
+        "author": "John Doe",
+        "genres": [
+          "Adventure",
+          "Fantasy"
+        ],
+        "price": 19.99,
+        "inStock": true,
+        "ratings": {
+          "average": 4.5,
+          "reviews": [
+            {
+              "user": "Alice",
+              "comment": "An amazing journey!",
+              "rating": 5,
+              "date": "2023-01-15"
+            },
+            {
+              "user": "Bob",
+              "comment": "Good, but could be better.",
+              "rating": 4,
+              "date": "2023-01-20"
+            }
+          ]
+        }
+      },
+      {
+        "id": "002",
+        "title": "Mystery of the Lost Key",
+        "author": "Jane Smith",
+        "genres": [
+          "Mystery",
+          "Thriller"
+        ],
+        "price": 14.99,
+        "inStock": false,
+        "ratings": {
+          "average": 4.0,
+          "reviews": []
+        }
+      },
+      {
+        "id": "003",
+        "title": "Cooking in Wonderland",
+        "author": "Chef Rabbit",
+        "genres": [
+          "Cookbook"
+        ],
+        "price": 29.99,
+        "inStock": true,
+        "ratings": {
+          "average": 4.8,
+          "reviews": [
+            {
+              "user": "Cheshire Cat",
+              "comment": "Delicious recipes!",
+              "rating": 5,
+              "date": "2023-02-10"
+            }
+          ]
+        }
+      }
+    ],
+    "employees": [
+      {
+        "id": "E001",
+        "name": "Alice",
+        "position": "Manager",
+        "startDate": "2020-01-15",
+        "contact": {
+          "email": "alice@wonderland.com",
+          "phone": "555-0123"
+        }
+      },
+      {
+        "id": "E002",
+        "name": "Bob",
+        "position": "Sales Associate",
+        "startDate": "2021-06-01",
+        "contact": {
+          "email": "bob@wonderland.com",
+          "phone": "555-0456"
+        }
+      }
+    ],
+    "openingHours": {
+      "monday": "9 AM - 6 PM",
+      "tuesday": "9 AM - 6 PM",
+      "wednesday": "9 AM - 6 PM",
+      "thursday": "9 AM - 8 PM",
+      "friday": "9 AM - 8 PM",
+      "saturday": "10 AM - 5 PM",
+      "sunday": "Closed"
+    }
+  }
+}
