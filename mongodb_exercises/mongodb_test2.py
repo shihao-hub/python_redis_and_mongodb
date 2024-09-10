@@ -68,9 +68,17 @@ class Product(engine.Document):
         super().__init__(*args, **values)
 
 
-print("products:\n")
+Product.drop_collection()
+Ratings.drop_collection()
+Review.drop_collection()
+
+# print("products:\n")
 products = co.find_one({}, {"store.products": 1}).get("store").get("products")
 for e in products:
     product = Product(**e)
-    print(pprint.pformat(e), flush=True)
+    # print(pprint.pformat(e), flush=True)
     product.save()
+
+pprint.pprint(list(db["co_ratings"].find({
+    "_id": db["co_product"].find_one({}, {"ratings": 1}).get("ratings")
+})))
