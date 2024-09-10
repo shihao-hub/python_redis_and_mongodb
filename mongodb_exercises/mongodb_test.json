@@ -1,0 +1,13 @@
+{
+  "students": [
+    {
+      "username": "张三",
+      "likes": {
+        "username": "小红"
+      }
+    },
+    {
+      "username": "李四"
+    }
+  ]
+}
