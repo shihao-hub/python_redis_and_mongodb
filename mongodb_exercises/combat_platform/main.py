@@ -66,7 +66,7 @@ class VulnerabilityTrackingTask(Document):
 def generate_desktop_vulnerability_collection():
     with open("./desktop_vulnerability_information.json", "r", encoding="utf-8") as file:
         data = json.load(file).get("data")
-    data = data[:10]  # 测试用
+    data = data[10:20]  # 测试用
     # 注意，数据库好像连接一个就行了，集合加前缀就是咯...
     with mongoengine_connect(DB_NAME):
         docs = [DesktopVulnerability(**d) for d in data]
