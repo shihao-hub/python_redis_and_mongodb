@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "_id": "66e4863e9adfea4d34ec13c4",
+      "slug": "wheelbarrow-9092",
+      "sku": "9092",
+      "name": "Extra",
+      "description": "",
+      "details": {
+        "weight": 47,
+        "weight_units": "lbs",
+        "model_num": 111,
+        "manufacturer": "Acme",
+        "color": "Green"
+      },
+      "total_reviews": 411,
+      "average_review": 4.5
+    },
+    {
+    },
+    {
+    }
+  ]
+}
